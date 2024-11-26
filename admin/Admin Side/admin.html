@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../admin/manage.css">
+    <title>Management</title>
+</head>
+<body>
+    <form action="manage.php" method="POST">
+    <div class="main-container">
+        <!-- Side nav-->
+        <nav class="side-nav" id="side_nav">
+            <div class="profile-card" id="profile-card">
+                <img src="/src/auth.jpg" alt="Admin-Profile">
+                <div class="profile-info">
+                    <h4>Seller Name</h4>                
+                    <p>seller</p>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <button class="products" name="products" type="submit">Products</button>
+                <button class="orders" name="orders" type="submit">Orders</button>
+
+                <footer>
+                    <button class="logOut" name="logOut" type="submit">Log Out</button>
+                </footer>
+            </div>
+        </nav>
+
+        <!-- Main content -->
+        <div class="product-container">
+            <nav class="top-nav">
+                <ul>
+                    <a href="" class="categories">Espresso</a>
+                    <a href="" class="categories">Blended Beverages</a>
+                    <a href="" class="categories">Tea</a>
+                    <a href="" class="categories">Rice Meals</a>
+                    <a href="" class="categories">Pasta</a>
+                    <a href="" class="categories">Snacks</a>
+
+                    <div class="animation active"></div>
+                </ul>
+
+                <button class="addProd" name="addProd" type="submit">Add Product</button>
+            </nav>
+
+            <!-- Products, have to show in 4x4  -->
+            <div class="productLine">
+                <div class="product-card">
+                    <img src="../src/hottea.jpg" alt="Product-image">
+                    <div class="product-info">
+                        <h4>Product Name</h4>
+                        <div class="detail-grid">
+                            <div class="product-details">
+                                <div class="detail">
+                                    <span>Size</span>
+                                    <span class="value">M</span>
+                                </div>
+                                <div class="detail">
+                                    <span>Type</span>
+                                    <span class="value">Hot</span>
+                                </div>
+                                <div class="detail">
+                                    <span>Add Ons</span>
+                                    <span class="value">Pearl</span>
+                                </div>
+                                <div class="detail">
+                                    <span>Price</span> 
+                                    <span class="price">₱69.0</span>
+                                </div>
+                                <div class="buttons">
+                                    <button class="delete" name="delete" type="submit">Delete</button>
+                                    <button class="update" name="update" type="submit">Update</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="../src/hottea.jpg" alt="Product-image">
+                    <div class="product-info">
+                        <h4>Product Name</h4>
+                        <div class="detail-grid">
+                            <div class="product-details">
+                                <div class="detail">
+                                    <span>Size</span>
+                                    <span class="value">M</span>
+                                </div>
+                                <div class="detail">
+                                    <span>Type</span>
+                                    <span class="value">Hot</span>
+                                </div>
+                                <div class="detail">
+                                    <span>Add Ons</span>
+                                    <span class="value">Pearl</span>
+                                </div>
+                                <div class="detail">
+                                    <span>Price</span> 
+                                    <span class="price">₱69.0</span>
+                                </div>
+                                <div class="buttons">
+                                    <button class="delete" name="delete" type="submit">Delete</button>
+                                    <button class="update" name="update" type="submit">Update</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repeat the product-card div for other products -->
+
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>
